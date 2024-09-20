@@ -1,0 +1,83 @@
+/* Estilo general del cuerpo */
+body {                                      
+    font-family: Arial, sans-serif;                     /* Define la fuente de texto de todo el cuerpo de la página */
+    line-height: 1.6;                                   /* Define la altura de la línea (espaciado vertical entre las líneas de texto) */
+    margin: 0;                                          /* Elimina los márgenes predeterminados */
+    padding: 0;                                         /* Elimina el relleno predeterminado */
+}
+
+/* Estilos para el header (encabezado) */
+header {                                   
+    background-color: #2d7099;                          /* Color de fondo oscuro para el encabezado */
+    color: rgb(13, 91, 155);                            /* Color del texto del encabezado */
+    text-align: center;                                 /* Centra el texto horizontalmente */
+    padding: 1rem;                                      /* Añade un relleno de 1 rem alrededor del contenido del encabezado */
+}
+
+/* Estilos para la barra de navegación (nav) */
+nav {                                                    
+    background-color: #35424a;                          /* Asigna el color de fondo */
+    color: white;                                       /* Color del texto de la navegación como blanco */
+    padding: 0.5rem;                                    /* Relleno de 0.5 rem alrededor del contenido del elemento de navegación */
+}
+
+/* Estilos para la lista de navegación */
+nav ul {                                
+    list-style-type: none;                              /* Elimina los marcadores de lista (puntos o números) */
+    padding: 0;                                         /* Elimina el relleno interno predeterminado de la lista */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav ul li {
+    display: inline;                                    /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 10px;                                 /* Agrega un margen derecho de 10 píxeles entre cada elemento de la lista */
+}
+
+/* Estilos para los enlaces de navegación */
+nav ul li a {                           
+    color: white;                                       /* Color del texto de los enlaces como blanco */
+    text-decoration: none;                              /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;                                      /* Añade un relleno de 20 píxeles alrededor del contenido principal */
+}
+
+/* Estilos para el pie de página (footer) */
+footer {                                
+    background-color: #35424a;                          /* Color de fondo oscuro al pie de página */
+    color: white;                                       /* Color del texto del pie de página como blanco */
+    text-align: center;                                 /* Centra el texto dentro del pie de página */
+    padding: 0.1rem;                                    /* Agrega un relleno de 1 rem alrededor del contenido del pie de página */
+    position: fixed;                                    /* Fija el pie de página en una posición específica */
+    bottom: 0;                                          /* Coloca el pie de página en la parte inferior de la ventana */
+    width: 100%;                                        /* Asegura que el pie de página ocupe todo el ancho de la ventana */
+}
+
+/* CSS para centrar la imagen */
+.centrar-imagen {
+    display: flex; /* Utiliza Flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+}
+
+/* CSS para separar los títulos y descripciones */
+dt {
+    font-weight: bold;           /* Resalta los títulos */
+    margin-top: 10px;            /* Espacio entre el título y el contenido anterior */
+}
+
+dd {
+    margin-bottom: 10px;         /* Espacio inferior entre la descripción y el siguiente título */
+}
+
+/* Alineación de texto */
+.alinear-izquierda {
+    text-align: right;           /* Alinea el texto a la derecha */
+}
+
+.alinear-derecha {
+    text-align: left;            /* Alinea el texto a la izquierda */
+}

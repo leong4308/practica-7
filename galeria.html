@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Alitas Gabu</title>
+    <style>
+        /* Estilo general del cuerpo */
+        body {                                      
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Estilos para el header */
+        header {                                   
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            background-color: #c0392b;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos para el catálogo */
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .catalogo-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .catalogo-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .catalogo-item h3 {
+            margin: 10px 0;
+            color: #e74c3c;
+        }
+
+        .catalogo-item p {
+            margin: 0 0 15px;
+        }
+
+        .catalogo-item button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .catalogo-item button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Estilos para la galería */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galeria-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .galeria-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para centrar imágenes */
+        .centrar-imagen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Alineación de títulos */
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-bottom: 10px;
+        }
+
+        .alinear-izquierda {
+            text-align: right;
+        }
+
+        .alinear-derecha {
+            text-align: left;
+        }
+
+        h2 {
+            color: #e74c3c;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galería</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Página principal">Inicio</a></li>
+            <li><a href="nosotros.html" title="Descripción">Nosotros</a></li>
+            <li><a href="catalogo.html" title="Catálogo">Catálogo</a></li>
+            <li><a href="galeria.html" title="Galería">Galería</a></li>
+            <li><a href="contacto.html" title="Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Nuestra galería</h2>
+        
+        <div class="catalogo">
+            <div class="catalogo-item">
+                <img src="Alitas Clásicas.png" alt="Alitas clásicas">
+                
+                <h3>Alitas clásicas</h3>
+                <p>Acompañadas de papas fritas crujientes.</p>
+            </div>
+
+            <div class="catalogo-item">
+                <img src="Alitas BBQ.png" alt="Alitas BBQ">
+                <h3>Alitas BBQ</h3>
+                <p>Deliciosas alitas bañadas en salsa BBQ.</p>
+            </div>
+
+            <div class="catalogo-item">
+                <img src="Alitas Picantes.png" alt="Alitas Picantes">
+                <h3>Alitas Picantes</h3>
+                <p>Para los amantes del picante, ¡las mejores!</p>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="galeria-item">
+                <img src="Alitas BBQ.png" alt="Alitas BBQ">
+            </div>
+            <div class="galeria-item">
+                <img src="Alitas Picantes.png" alt="Alitas Picantes">
+            </div>
+            <div class="galeria-item">
+                <img src="Alitas Clásicas.png" alt="Alitas con clawsicas">
+            </div>
+            <div class="galeria-item">
+                <img src="restaurante.jpg" alt="Interior del Restaurante">
+            </div>
+            <div class="galeria-item">
+                <img src="chef.jpg" alt="Clientes disfrutando">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alitas Gabu.</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.facebook.com/">Facebook</a> | <a href="https://www.instagram.com/">Instagram</a> | <a href="https://twitter.com/">Twitter</a>
+    </footer>
+</body>
+</html>

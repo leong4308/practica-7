@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alitas Gabu - Alitas</title>
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Fondo blanco */
+            color: #333;
+        }
+
+        /* Estilos para el header */
+        header {
+            background-color: #e74c3c; /* Rojo */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            background-color: #c0392b; /* Rojo más oscuro */
+            color: white;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos para la sección hero */
+        .hero {
+            background-color: #e74c3c; /* Rojo */
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            background-color: rgba(255, 255, 255, 0.8); /* Blanco semi-transparente */
+            color: #e74c3c; /* Texto rojo */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Estilos para el botón de llamada a la acción */
+        .cta-button {
+            display: inline-block;
+            background-color: #e74c3c; /* Rojo */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b; /* Rojo más oscuro */
+        }
+
+        /* Estilos para el main */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Secciones de platillos destacados */
+        .featured-items {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .featured-item {
+            flex-basis: 30%;
+            text-align: center;
+            background-color: white; /* Fondo blanco para los items */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .featured-item h3 {
+            color: #e74c3c; /* Texto rojo */
+            margin: 10px 0;
+        }
+
+        /* Estilos para la sección de testimonios */
+        .testimonials {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .testimonials blockquote {
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #e74c3c; /* Rojo */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffffff; /* Blanco */
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alitas Gabu</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Bienvenidos a Alitas Gabu</h2>
+            <p>Las mejores alitas de la ciudad</p>
+            <a href="catalogo.html" class="cta-button">Haz tu pedido ahora</a>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <h2><center>Nuestros Platillos Destacados</center></h2>
+            <div class="featured-items">
+                <div class="featured-item">
+                    <img src="Alitas Clásicas.png" alt="Alitas clásicas">
+                    <h3>Alitas de la Casa</h3>
+                    <p>La receta secreta del Chef, ¡tienes que probarlas!</p>
+                </div>
+                <div class="featured-item">
+                    <img src="Alitas BBQ.png" alt="Alitas BBQ">
+                    <h3>Alitas BBQ</h3>
+                    <p>Nuestras famosas alitas bañadas en salsa BBQ casera</p>
+                </div>
+                <div class="featured-item">
+                    <img src="Alitas Picantes.png" alt="Alitas Picantes">
+                    <h3>Alitas Picantes</h3>
+                    <p>Para los amantes del picante, con nuestra salsa especial</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><center>Horario y Ubicación</center></h2>
+            <p><center>Abierto de martes a domingo, de 12:00 PM a 10:00 PM</center></p>
+            <p><center>Nos encontramos en Calle Principal #123, Ciudad</center></p>
+            <center><a href="https://www.google.com.mx/maps/preview" class="cta-button">Ver en el mapa</a></center>
+        </section>
+
+        <section class="testimonials">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <blockquote>
+                "¡Las mejores alitas que he probado! El ambiente es genial y el servicio es excelente." - María G.
+            </blockquote>
+            <blockquote>
+                "Alitas Gabu es nuestro lugar favorito para ver los partidos. ¡Las salsas son increíbles!" - Carlos R.
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alitas Gabu.</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.facebook.com/">Facebook</a> | <a href="https://www.instagram.com/">Instagram</a> | <a href="https://twitter.com/">Twitter</a>
+    </footer>
+</body>
+</html>
